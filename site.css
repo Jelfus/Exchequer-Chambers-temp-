@@ -1,8 +1,8 @@
 :root {
   --ink: #202428;
   --muted: #657078;
-  --accent: #982c38;
-  --accent-dark: #75202a;
+  --accent: #007f96;
+  --accent-dark: #005768;
   --paper: #f3f3f1;
   --white: #fff;
   --line: #d7d9d8;
@@ -20,7 +20,7 @@ button, input { font: inherit; }
 .utility-bar p a { color: var(--white); font-weight: 700; }
 .utility-links { display: flex; align-items: center; gap: 19px; }
 .utility-links a { white-space: nowrap; }
-.utility-links a:hover { color: #e7b6ba; }
+.utility-links a:hover { color: #9bdbe5; }
 .utility-phone { font-weight: 700; }
 .site-header { min-height: 82px; padding: 13px 6.25%; background: var(--white); display: flex; align-items: center; justify-content: space-between; gap: 36px; position: relative; z-index: 4; border-bottom: 1px solid #eceeed; }
 .brand { display: flex; align-items: center; line-height: 1; min-width: 180px; }
@@ -96,7 +96,7 @@ button, input { font: inherit; }
 .person-read-more span { transition: transform .2s; }
 .person-read-more:hover span { transform: translateX(3px); }
 .person-card:hover .person-name { color: var(--accent); }
-.callout { padding: 58px 10%; display: flex; align-items: center; justify-content: space-between; gap: 35px; background: #eee9e7; border-top: 3px solid var(--accent); }
+.callout { padding: 58px 10%; display: flex; align-items: center; justify-content: space-between; gap: 35px; background: #eaf3f4; border-top: 3px solid var(--accent); }
 .callout h2 { font-size: clamp(30px, 4vw, 42px); }
 .callout p:not(.eyebrow) { margin: 10px 0 0; color: #59636a; font-size: 12px; }
 
@@ -150,7 +150,7 @@ button, input { font: inherit; }
 .empty-state { padding: 24px 0; color: #677178; font-size: 12px; }
 .site-footer { display: grid; grid-template-columns: 1.2fr 1fr 1fr auto; align-items: start; gap: 30px; padding: 38px 6.25%; background: #24292c; color: #e1e3e3; font-size: 10px; }
 .site-footer p { margin: 0; line-height: 1.9; }
-.site-footer a:hover { color: #e8adb2; }
+.site-footer a:hover { color: #9bdbe5; }
 .footer-brand { color: var(--white); font-size: 11px; font-weight: 700; letter-spacing: .11em; }
 .footer-note { color: #aeb4b6; text-align: right; font-size: 9px; }
 .footer-social { display: flex; gap: 13px; margin-top: 8px; color: #fff; font-weight: 700; }
