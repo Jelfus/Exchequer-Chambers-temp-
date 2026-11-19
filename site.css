@@ -52,6 +52,7 @@ button, input { font: inherit; }
 .slide-photo img { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
 .slide-photo.cover img { object-fit: cover; }
 .slide-photo.cover .portrait-leslie { object-position: center 18%; }
+.slide-photo.cover .portrait-andrew { object-position: center 45%; }
 .slide-photo.cover .portrait-stefano { object-position: center 20%; }
 .slide-photo.cover .portrait-peter { object-position: center 22%; }
 .slide-photo.cover .portrait-suleman { object-position: center 18%; }
