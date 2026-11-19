@@ -23,9 +23,8 @@ button, input { font: inherit; }
 .utility-links a:hover { color: #e7b6ba; }
 .utility-phone { font-weight: 700; }
 .site-header { min-height: 82px; padding: 13px 6.25%; background: var(--white); display: flex; align-items: center; justify-content: space-between; gap: 36px; position: relative; z-index: 4; border-bottom: 1px solid #eceeed; }
-.brand { display: flex; flex-direction: column; line-height: 1; min-width: 180px; }
-.brand-name { font-size: 38px; font-weight: 700; letter-spacing: .12em; }
-.brand-chambers { margin-top: 5px; color: var(--accent); font-size: 26px; font-weight: 700; letter-spacing: .28em; }
+.brand { display: flex; align-items: center; line-height: 1; min-width: 180px; }
+.brand-image { display: block; width: 240px; max-width: 100%; height: auto; }
 .primary-nav { display: flex; align-items: center; gap: clamp(18px, 3vw, 40px); font-size: 14px; font-weight: 700; letter-spacing: .025em; }
 .primary-nav > a:not(.nav-call) { padding: 12px 0; border-bottom: 2px solid transparent; }
 .primary-nav > a:not(.nav-call):hover, .primary-nav > a[aria-current="page"] { color: var(--accent); border-color: var(--accent); }
@@ -179,8 +178,7 @@ button, input { font: inherit; }
   .utility-bar { min-height: 36px; gap: 8px; padding: 7px 5%; font-size: 9px; }
   .utility-bar > p { display: none; }
   .utility-links { width: 100%; justify-content: space-between; gap: 10px; }
-  .brand-name { font-size: 22px; }
-  .brand-chambers { font-size: 15px; }
+  .brand-image { width: 180px; }
   .home-carousel { min-height: 600px; }
   .carousel-slide { min-height: 600px; display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 22px; padding: 45px 7% 88px; }
   .slide-copy h1, .slide-copy h2 { font-size: 43px; }
