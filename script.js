@@ -52,12 +52,15 @@ if (carousel) {
     lastClone.removeAttribute("data-slide");
     firstClone.setAttribute("aria-hidden", "true");
     lastClone.setAttribute("aria-hidden", "true");
+    firstClone.setAttribute("inert", "");
+    lastClone.setAttribute("inert", "");
     track.append(firstClone);
     track.prepend(lastClone);
 
     track.style.transform = "translateX(-100%)";
 
-    track.addEventListener("transitionend", () => {
+    track.addEventListener("transitionend", (event) => {
+      if (event.target !== track || event.propertyName !== "transform") return;
       if (activeIndex === 0) {
         track.style.transition = "none";
         activeIndex = slides.length;
@@ -116,7 +119,7 @@ if (carousel) {
     startTimer();
   });
   document.addEventListener("visibilitychange", startTimer);
-  showSlide(0);
+  showSlide(1);
   if (toggleButton && reducedMotion) {
     toggleButton.setAttribute("aria-pressed", "true");
     toggleButton.textContent = "Play slides";
