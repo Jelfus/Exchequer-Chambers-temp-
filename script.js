@@ -20,15 +20,24 @@ const searchInput = document.querySelector("#barrister-search");
 if (searchInput) {
   const cards = [...document.querySelectorAll(".directory-card")];
   const emptyState = document.querySelector(".empty-state");
-  searchInput.addEventListener("input", () => {
+  const filterCards = () => {
     const query = searchInput.value.trim().toLocaleLowerCase();
     let visibleCount = 0;
     cards.forEach((card) => {
-      const matches = card.textContent.toLocaleLowerCase().includes(query);
+      const searchableText = `${card.textContent} ${card.dataset.search || ""}`.toLocaleLowerCase();
+      const matches = searchableText.includes(query);
       card.hidden = !matches;
       if (matches) visibleCount += 1;
     });
     if (emptyState) emptyState.hidden = visibleCount > 0;
+  };
+  searchInput.addEventListener("input", filterCards);
+  document.querySelectorAll("[data-search-topic]").forEach((button) => {
+    button.addEventListener("click", () => {
+      searchInput.value = button.dataset.searchTopic;
+      filterCards();
+      searchInput.focus();
+    });
   });
 }
 
